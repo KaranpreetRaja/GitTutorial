@@ -64,7 +64,9 @@ git config --global user.name "FirstName LastName"
 git config --global user.email "user@emailaddress.com"
 ```
 
-In order to view current configuration, you can check running the following command:
+To link your git activity with your github, [add the email address you use for git to your github](n order to vhttps://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account)
+
+You can view current configuration, you can check running the following command:
 
 ```
 git config --list
@@ -81,6 +83,18 @@ git init
 ```
 
 this creates a hidden .git configuration directory.
+
+If you make a local repo using git and you wish to host it on github, [install gh](https://cli.github.com/manual/installation) and then run the following command `gh repo create`
+
+### Clone Existing Repository
+
+Instead of making a new repository, if you want to create a clone of a previously existing repository, use the following command
+
+```
+git clone https://github.com/KaranpreetRaja/SyntaxSage.git
+```
+
+For the link after clone, replace that with the link for the github repository you would like to clone
 
 ### Adding/Removing Tracking Files
 
