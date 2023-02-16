@@ -2,6 +2,44 @@
 
 ## Installing Git
 
+### Installing Git on Windows
+
+You could either download the executable [here](https://github.com/git-for-windows/git/releases/download/v2.39.2.windows.1/Git-2.39.2-64-bit.exe), or use `winget`
+
+If you choose to use `winget`, install it if you dont already have it through the [Microsoft Store](https://www.microsoft.com/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab)
+
+And now run the following command in command prompt or Powershell
+
+```winget
+winget install --id Git.Git -e --source winget
+```
+
+### Installing Git on Mac
+
+Install Homebrew if you don't already have that, paste this into your mac terminal or linux shell prompt
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+And now you can use brew to install git
+
+```
+brew install git
+```
+
+If you wish not to use brew, you can also look at other meathods to [install Git on Mac](https://git-scm.com/download/mac)
+
+### Installing Git On Linux (Debian/Ubuntu)
+
+Use the following command in your linux terminal
+
+```
+apt-get install git
+```
+
+For other distibutions of linux, please see [install Git on Linux](https://git-scm.com/download/linux)
+
 ## Git Config
 
 Git configuration allows you to add configuration information (Name and Email) on three levels:
