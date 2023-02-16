@@ -64,7 +64,7 @@ git config --global user.name "FirstName LastName"
 git config --global user.email "user@emailaddress.com"
 ```
 
-To link your git activity with your github, [add the email address you use for git to your github](n order to vhttps://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account)
+To link your git activity with your github, [add the email address you use for git to your github](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account)
 
 You can view current configuration, you can check running the following command:
 
@@ -79,7 +79,7 @@ git config --list
 In order to make a new local repository using git, run the following command once you are in the directory you want to turn into a repository
 
 ```
-git init 
+git init RepoName
 ```
 
 this creates a hidden .git configuration directory.
