@@ -2,7 +2,6 @@
 
 ## Installing Git
 
-
 ## Git Config
 
 Git configuration allows you to add configuration information (Name and Email) on three levels:
@@ -59,7 +58,6 @@ You can stop tracking files by using the following command.
 
 ```
 git rm path/to/file
-
 ```
 
 The same "." parameter can be used to stop tracking all the files that are currently being tracked (`git rm .`)
@@ -93,3 +91,61 @@ For now, all of your changes are local, in order to "publish" these changes you 
 ```
 git push origin
 ```
+
+## Branches
+
+Branches in git allow you to split off changes from the main line
+
+### Viewing Branches
+
+In order to see all current branches of a repo, you can run the following command
+
+```
+git branch
+```
+
+The "*" in front of the branch name indicates the current branch you are on
+
+### Creating New Branches
+
+In order to create a new branch, you can run the following command
+
+```
+git branch NewBranch
+```
+
+Running this command will create a new branch but will not switch to it.
+
+### Changing Branches
+
+If you wish to change to another branch, you can use the following command
+
+```
+git checkout NewBranch
+```
+
+### Comparing Branches
+
+in order to compare the changes between two branches you can use the following command
+
+```
+git diff master .. NewBranch
+```
+
+### Merging Branches
+
+In order to merge a branch, you need to first switch to the ancestor branch (the branch you are trying to merge into, which is usually `main` or `master`).
+
+```
+git merge NewBranch
+```
+
+### Deleting Branches
+
+You are able to delete branches by using the "-d" tag.
+
+```
+git branch -d NewBranchName
+```
+
+You can only delete after it is fully merged.
