@@ -91,7 +91,7 @@ If you make a local repo using git and you wish to host it on github, [install g
 Instead of making a new repository, if you want to create a clone of a previously existing repository, use the following command
 
 ```
-git clone https://github.com/KaranpreetRaja/SyntaxSage.git
+git clone {link to repo}
 ```
 
 For the link after clone, replace that with the link for the github repository you would like to clone
